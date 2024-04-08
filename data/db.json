@@ -2,8 +2,8 @@
   "orders": [
     {
       "id": "1",
-      "uuid": "e7cf6f7b-3a0b-4b8c-b91f-9b7b9d8507e7",
-      "order_no": "ORD123456",
+      "guid": "e7cf6f7b-3a0b-4b8c-b91f-9b7b9d8507e7",
+      "order_no": "110",
       "orderItems": [
         {
           "item": "Chicken masala",
@@ -24,8 +24,8 @@
     },
     {
       "id": "2",
-      "uuid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205186",
-      "order_no": "ORD789012",
+      "guid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205186",
+      "order_no": "111",
       "orderItems": [
         {
           "item": "Chicken masala",
@@ -46,8 +46,8 @@
     },
     {
       "id": "3",
-      "uuid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205187",
-      "order_no": "ORD789012",
+      "guid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205187",
+      "order_no": "112",
       "orderItems": [
         {
           "item": "Chicken masala",
@@ -62,14 +62,14 @@
           "quantity": "250 ML"
         }
       ],
-      "status": "2",
+      "status": "3",
       "created_at": "2024-04-07T08:05:00Z",
       "updated_at": "2024-04-07T08:06:00Z"
     },
     {
       "id": "4",
-      "uuid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205188",
-      "order_no": "ORD789012",
+      "guid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205188",
+      "order_no": "113",
       "orderItems": [
         {
           "item": "Chicken masala",
@@ -84,8 +84,8 @@
           "quantity": "250 ML"
         }
       ],
-      "status": "2",
-      "created_at": "2024-04-07T08:0:00Z",
+      "status": "4",
+      "created_at": "2024-04-07T08:07:00Z",
       "updated_at": "2024-04-07T08:08:00Z"
     }
   ]
