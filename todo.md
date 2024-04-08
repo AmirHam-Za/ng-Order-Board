@@ -16,14 +16,14 @@
     6. ~~Run the application with concurrently command.~~
     7. ~~Check if data from db.json work in the browser~~.
 
-3. ~~Show dynamic data from database in the related box.~~
+3. Show dynamic data from database in the related box.
     1. ~~Call data in dashboard.component.ts file from database of local json-server.~~
     2. ~~Handle error using error handler.~~
     3. ~~Check in the console if the data called properly.~~
     4. ~~Create a component named OrderTypeComponent for all boxes and implement it in the DashboardComponent.~~
-    5. ~~Create a component named OrderComponent for all tasks and implement it in the OrderTypeComponent.~~
+    5. ~~Create a component named OrderComponent for all orders and implement it in the OrderTypeComponent.~~
     6. ~~Show the dynamic data from DashboardComponent in Order.component.html.~~
-    7. ~~Refactor code & structure.~~
+    7. Refactor code & structure.
 
 4. Implement drag and drop options.
 
