@@ -8,131 +8,23 @@
 
     <div class="p-8">
       <div class="flex justify-center w-full flex-wrap">
-        <div class="p-4 w-3/12">
-          <div class="m-2 bg-green-300 p-4 rounded min-h-[600px] shadow-md">
-            <h1 class="text-gray-600 text-2xl font-semibold mb-4">NEW ORDERS</h1>
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">122</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">123</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-
-
-
-          </div>
-        </div>
 
         <div class="p-4 w-3/12">
-          <div class="m-2 bg-purple-300 p-4 rounded min-h-[600px] shadow-md">
-            <h1 class="text-gray-600 text-2xl font-semibold mb-4">PREPARING</h1>
-
-
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">122</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">123</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <app-order-type [orders]="getOrdersByStatus('1')" [title]="title[0].title"
+            [bgColor]="bgColor[0].bgColor"></app-order-type>
         </div>
-
         <div class="p-4 w-3/12">
-          <div class="m-2 bg-lime-200  p-4 rounded min-h-[600px] shadow-md">
-            <h1 class="text-gray-600 text-2xl font-semibold mb-4">PREPARED</h1>
-
-
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">122</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">123</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <app-order-type [orders]="getOrdersByStatus('2')" [title]="title[1].title"
+            [bgColor]="bgColor[1].bgColor"></app-order-type>
         </div>
-
         <div class="p-4 w-3/12">
-          <div class="m-2 bg-orange-200 p-4 rounded min-h-[600px] shadow-md">
-            <h1 class="text-gray-600 text-2xl font-semibold mb-4">DELIVERED</h1>
-
-
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">122</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-500 rounded opacity-80 mb-2">
-              <p class="p-1 font-semibold text-gray-100 text-center text-xl ">123</p>
-              <div class="flex flex-col">
-                <div class="">
-                  <p class="bg-white px-2">Chicken masala x <span>2</span></p>
-                  <p class="bg-white px-2">French Fries x <span>Large</span></p>
-                  <p class="bg-white px-2">CoKaCola x <span>250 ML</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <app-order-type [orders]="getOrdersByStatus('3')" [title]="title[2].title"
+            [bgColor]="bgColor[2].bgColor"></app-order-type>
         </div>
-
-
+        <div class="p-4 w-3/12">
+          <app-order-type [orders]="getOrdersByStatus('4')" [title]="title[3].title"
+            [bgColor]="bgColor[3].bgColor"></app-order-type>
+        </div>
 
       </div>
     </div>

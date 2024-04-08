@@ -1,1 +1,7 @@
-<p>order-type works!</p>
+
+<div [ngClass]="bgColor" class="min-h-[600px] rounded p-2">
+
+  <h1 class="text-gray-600 text-2xl font-semibold p-2 mb-2">{{ title }}</h1>
+
+  <app-order [orders]="orders"></app-order>
+</div>
