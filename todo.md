@@ -8,6 +8,13 @@
     7. ~~Check if the design suits in the dashboard as expected.~~
 
 2. Database setup.
+    1. Install json-server.
+    2. Install concurrently.
+    3. Add concurrently command in script in package.json file.
+    4. Create 'data' folder in root and create 'db.json' file in it.
+    5. In 'db.json' file, create specific data for the Order Board Application.
+    6. Run the application with concurrently command.
+    7. Check if data from db.json work in the browser.
 
 3. Show dynamic data from database in the related box.
 
