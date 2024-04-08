@@ -9,18 +9,24 @@ import { OrderTypeComponent } from './order-type/order-type.component';
 import { OrderComponent } from './order/order.component';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     DashboardComponent,
     OrderTypeComponent,
     OrderComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
+
   providers: [],
+
   bootstrap: [AppComponent]
+
 })
+
 export class AppModule { }

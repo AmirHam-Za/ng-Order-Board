@@ -18,14 +18,12 @@ export class DashboardComponent {
   todo: any[] = [];
   done: any[] = [];
 
-
-
   constructor(private _orderService: OrderService) { }
 
   ngOnInit(): void {
     this.loadOrders();
-    this.title = this.taskBoxTitleObjects();
-    this.bgColor = this.taskBgcolorObjects();
+    this.title = this.orderBoxTitleObjects();
+    this.bgColor = this.orderBgcolorObjects();
   }
 
   loadOrders(): void {
@@ -46,7 +44,7 @@ export class DashboardComponent {
     return this.orders.filter((order) => order.status === status);
   }
 
-  taskBoxTitleObjects() {
+  orderBoxTitleObjects() {
     const titleobjects  = [
       { id: 1, title: 'NEW ORDERS' },
       { id: 2, title: 'PREPARING' },
@@ -56,7 +54,7 @@ export class DashboardComponent {
     return titleobjects;
   }
 
-  taskBgcolorObjects() {
+  orderBgcolorObjects() {
     const colorObjects = [
       { id: 1, bgColor: 'bg-green-300' },
       { id: 2, bgColor: 'bg-purple-300' },

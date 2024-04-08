@@ -1,9 +1,11 @@
 <div class="bg-teal-100">
+
   <header class="h-16 bg-teal-400">
     <div class="container mx-auto">
       <h1 class="text-3xl px-4 p-2  text-gray-100">Order Board</h1>
     </div>
   </header>
+
   <div class="container mx-auto  min-h-svh p-4 ">
 
     <div class="p-8">
@@ -13,14 +15,17 @@
           <app-order-type [orders]="getOrdersByStatus('1')" [title]="title[0].title"
             [bgColor]="bgColor[0].bgColor"></app-order-type>
         </div>
+
         <div class="p-4 w-3/12">
           <app-order-type [orders]="getOrdersByStatus('2')" [title]="title[1].title"
             [bgColor]="bgColor[1].bgColor"></app-order-type>
         </div>
+
         <div class="p-4 w-3/12">
           <app-order-type [orders]="getOrdersByStatus('3')" [title]="title[2].title"
             [bgColor]="bgColor[2].bgColor"></app-order-type>
         </div>
+        
         <div class="p-4 w-3/12">
           <app-order-type [orders]="getOrdersByStatus('4')" [title]="title[3].title"
             [bgColor]="bgColor[3].bgColor"></app-order-type>

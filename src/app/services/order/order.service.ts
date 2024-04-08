@@ -11,7 +11,6 @@ export class OrderService {
   constructor(private _http: HttpClient) {}
 
   getOrdersAsync(): Observable<any[]> {
-
     return this._http.get<any[]>(`${this.API_ENDPOINT}/orders`);
   }
 
