@@ -1,0 +1,92 @@
+{
+  "orders": [
+    {
+      "id": "1",
+      "uuid": "e7cf6f7b-3a0b-4b8c-b91f-9b7b9d8507e7",
+      "order_no": "ORD123456",
+      "orderItems": [
+        {
+          "item": "Chicken masala",
+          "quantity": "2"
+        },
+        {
+          "item": "French Fries",
+          "quantity": "Large"
+        },
+        {
+          "item": "CoKaCola",
+          "quantity": "250 ML"
+        }
+      ],
+      "status": "1",
+      "created_at": "2024-04-08T12:01:00Z",
+      "updated_at": "2024-04-08T12:02:00Z"
+    },
+    {
+      "id": "2",
+      "uuid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205186",
+      "order_no": "ORD789012",
+      "orderItems": [
+        {
+          "item": "Chicken masala",
+          "quantity": "2"
+        },
+        {
+          "item": "French Fries",
+          "quantity": "Large"
+        },
+        {
+          "item": "CoKaCola",
+          "quantity": "250 ML"
+        }
+      ],
+      "status": "2",
+      "created_at": "2024-04-07T08:03:00Z",
+      "updated_at": "2024-04-07T08:04:00Z"
+    },
+    {
+      "id": "3",
+      "uuid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205187",
+      "order_no": "ORD789012",
+      "orderItems": [
+        {
+          "item": "Chicken masala",
+          "quantity": "2"
+        },
+        {
+          "item": "French Fries",
+          "quantity": "Large"
+        },
+        {
+          "item": "CoKaCola",
+          "quantity": "250 ML"
+        }
+      ],
+      "status": "2",
+      "created_at": "2024-04-07T08:05:00Z",
+      "updated_at": "2024-04-07T08:06:00Z"
+    },
+    {
+      "id": "4",
+      "uuid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205188",
+      "order_no": "ORD789012",
+      "orderItems": [
+        {
+          "item": "Chicken masala",
+          "quantity": "2"
+        },
+        {
+          "item": "French Fries",
+          "quantity": "Large"
+        },
+        {
+          "item": "CoKaCola",
+          "quantity": "250 ML"
+        }
+      ],
+      "status": "2",
+      "created_at": "2024-04-07T08:0:00Z",
+      "updated_at": "2024-04-07T08:08:00Z"
+    }
+  ]
+}
