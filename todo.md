@@ -1,11 +1,11 @@
-1. Project setup with base design.
-    1. Initial ng setup.
-    2. Create git repository. 
-    3. Tailwind configaration.
-    4. Create the required UI design.
-    5. Create a dashboard component.
-    6. Implement the UI design in the dashboard component.
-    7. Check if the design suits in the dashboard as expected.
+1. ~~Project setup with base design.~~
+    1. ~~Initial ng setup.~~
+    2. ~~Create git repository.~~ 
+    3. ~~Tailwind configaration.~~
+    4. ~~Create the required UI design.~~
+    5. ~~Create a dashboard component.~~
+    6. ~~Implement the UI design in the dashboard component.~~
+    7. ~~Check if the design suits in the dashboard as expected.~~
 
 2. Database setup.
 
