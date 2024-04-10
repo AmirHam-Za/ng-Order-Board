@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -6,10 +6,14 @@ import { Component, Input } from '@angular/core';
 })
 
 export class OrderComponent {
-  @Input() orders: any[] = [];
+    @Input() orders: any[] = [];
+
+  @Output() emitCurrentItem: EventEmitter<any> = new EventEmitter<any>();
+
+  currentItem: any | undefined;
 
   onDragStart(item: any) {
-
-    console.log("DragStartttt");
+    this.currentItem = item;
+    this.emitCurrentItem.emit(this.currentItem);
   }
 }

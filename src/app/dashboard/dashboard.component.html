@@ -13,25 +13,25 @@
 
         <div class="p-4 w-3/12" cdkDropList
          (cdkDropListDropped)="drop($event, '1')" >
-          <app-order-type  [orders]="getOrdersByStatus('1')" [title]="title[0].title"
+          <app-order-type (emitCurrentItem)="receiveCurrentItem($event)"  [orders]="getOrdersByStatus('1')" [title]="title[0].title"
             [bgColor]="bgColor[0].bgColor"></app-order-type>
         </div>
 
         <div  class="p-4 w-3/12" cdkDropList
         (cdkDropListDropped)="drop($event, '2')">
-          <app-order-type  [orders]="getOrdersByStatus('2')" [title]="title[1].title"
+          <app-order-type (emitCurrentItem)="receiveCurrentItem($event)"  [orders]="getOrdersByStatus('2')" [title]="title[1].title"
             [bgColor]="bgColor[1].bgColor"></app-order-type>
         </div>
 
         <div class="p-4 w-3/12" cdkDropList
          (cdkDropListDropped)="drop($event, '3')">
-          <app-order-type  [orders]="getOrdersByStatus('3')" [title]="title[2].title"
+          <app-order-type (emitCurrentItem)="receiveCurrentItem($event)"  [orders]="getOrdersByStatus('3')" [title]="title[2].title"
             [bgColor]="bgColor[2].bgColor"></app-order-type>
         </div>
 
         <div class="p-4 w-3/12" cdkDropList
          (cdkDropListDropped)="drop($event, '4')">
-          <app-order-type  [orders]="getOrdersByStatus('4')" [title]="title[3].title"
+          <app-order-type (emitCurrentItem)="receiveCurrentItem($event)"  [orders]="getOrdersByStatus('4')" [title]="title[3].title"
             [bgColor]="bgColor[3].bgColor"></app-order-type>
         </div>
 

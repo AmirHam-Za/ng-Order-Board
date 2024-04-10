@@ -2,5 +2,5 @@
 
   <h1 class="text-gray-600 text-2xl font-semibold p-2 mb-2">{{ title }}</h1>
 
-  <app-order [orders]="orders" ></app-order>
+  <app-order [orders]="orders" (emitCurrentItem)="receiveCurrentItem($event)"></app-order>
 </div>

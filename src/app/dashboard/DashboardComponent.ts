@@ -8,6 +8,7 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
+
 export class DashboardComponent {
   orders: any[] = [];
   title: any;
@@ -39,7 +40,7 @@ export class DashboardComponent {
           console.log(`Error occurred: ${error.statusText}-${error.status}`);
         }
       }
-    })
+    });
   }
 
   getOrdersByStatus(status: string): any[] {
@@ -47,7 +48,7 @@ export class DashboardComponent {
   }
 
   orderBoxTitleObjects() {
-    const titleobjects  = [
+    const titleobjects = [
       { id: 1, title: 'NEW ORDERS' },
       { id: 2, title: 'PREPARING' },
       { id: 3, title: 'PREPARED' },
@@ -77,7 +78,6 @@ export class DashboardComponent {
 
   drop(event: CdkDragDrop<any[]>, status: string) {
     const record = this.orders.find((m) => m.id == this.currentItem?.id);
-    console.log('currentItem>>',this.currentItem);
 
     if (record) {
       record.status = status;
