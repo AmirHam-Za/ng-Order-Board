@@ -30,5 +30,9 @@
     2. ~~Check if drags and drop options works.~~
 
 5. Let dynamic data change it’s status along with drag and drop.
+    1. By dropping an order in a box, an api should be called and changes the order's status according to the box.
+    2. Manage api calling interaction with drag and drop operation.
+    3. Check if api calling and drag & drop option works properly as it should be.
+    4. Refactor code and structure.
 
 6. Refactor and structure.
