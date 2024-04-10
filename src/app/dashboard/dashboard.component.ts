@@ -1,6 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { OrderService } from '../services/order/order.service';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-dashboard',
@@ -17,6 +18,7 @@ export class DashboardComponent {
   research: any[] = [];
   todo: any[] = [];
   done: any[] = [];
+
 
   constructor(private _orderService: OrderService) { }
 
@@ -49,7 +51,7 @@ export class DashboardComponent {
       { id: 1, title: 'NEW ORDERS' },
       { id: 2, title: 'PREPARING' },
       { id: 3, title: 'PREPARED' },
-      { id: 4, title: 'DELIBERED' },
+      { id: 4, title: 'DELIVERED' },
     ];
     return titleobjects;
   }
@@ -63,4 +65,18 @@ export class DashboardComponent {
     ];
     return colorObjects;
   }
+
+  onDragOver(event: DragEvent) {
+    console.log('onDragOver');
+    event.preventDefault();
+  }
+
+  drop(event: CdkDragDrop<any[]>, status: string) {
+
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    }
+  }
+
+
 }

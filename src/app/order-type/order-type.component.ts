@@ -10,7 +10,4 @@ export class OrderTypeComponent {
   @Input() title: string = '';
   @Input() bgColor: string = '';
 
-
-  @Output() emitCurrentItem: EventEmitter<any> = new EventEmitter<any>();
-
 }

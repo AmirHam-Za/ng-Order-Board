@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderTypeComponent } from './order-type/order-type.component';
 import { OrderComponent } from './order/order.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
 
@@ -20,7 +21,8 @@ import { OrderComponent } from './order/order.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
 
   providers: [],

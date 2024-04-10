@@ -14,4 +14,9 @@ export class OrderService {
     return this._http.get<any[]>(`${this.API_ENDPOINT}/orders`);
   }
 
+  updateOrderAsync(task: any): Observable<any> {
+
+    return this._http.put<any>(`${this.API_ENDPOINT}/orders/${task.id}`, task);
+  }
+
 }
