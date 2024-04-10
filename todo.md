@@ -26,6 +26,8 @@
     7. Refactor code & structure.
 
 4. Implement drag and drop options.
+    1. Add angular drag and drop options in the project.
+    2. Check if drags and drop options works.
 
 5. Let dynamic data change it’s status along with drag and drop.
 
