@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Orders } from '../interfaces/order.interface';
 @Component({
   selector: 'app-order-type',
   templateUrl: './order-type.component.html',
@@ -6,15 +7,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 
 export class OrderTypeComponent {
-  @Input() orders: any[] = [];
+  @Input() orders: Orders[] = [];
   @Input() title: string = '';
   @Input() bgColor: string = '';
 
-  @Output() emitCurrentItem: EventEmitter<any> = new EventEmitter<any>();
+  @Output() emitCurrentItem: EventEmitter<Orders> = new EventEmitter<Orders>();
 
-  currentItem: any | undefined
+  currentItem: Orders | undefined
 
-  receiveCurrentItem(event: any) {
+  receiveCurrentItem(event: Orders) {
     this.currentItem = event
     this.emitCurrentItem.emit(this.currentItem);
   }

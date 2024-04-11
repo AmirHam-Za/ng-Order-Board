@@ -2,6 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { OrderService } from '../services/order/order.service';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { Orders } from '../interfaces/order.interface';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,16 +10,16 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  orders: any[] = [];
+  orders: Orders[] = [];
   title: any;
   bgColor: any;
 
-  ideas: any[] = [];
-  research: any[] = [];
-  todo: any[] = [];
-  done: any[] = [];
+  newOrder: Orders[] = [];
+  preparing: Orders[] = [];
+  prepared: Orders[] = [];
+  delivered: Orders[] = [];
 
-  currentItem: any | undefined;
+  currentItem: Orders | undefined;
 
   constructor(private _orderService: OrderService) { }
 
@@ -30,7 +31,7 @@ export class DashboardComponent {
 
   loadOrders(): void {
     this._orderService.getOrdersAsync().subscribe({
-      next: (res: any[]) => {
+      next: (res: Orders[]) => {
         this.orders = res;
         console.log(this.orders);
       },
@@ -42,7 +43,7 @@ export class DashboardComponent {
     })
   }
 
-  getOrdersByStatus(status: string): any[] {
+  getOrdersByStatus(status: string): Orders[] {
     return this.orders.filter((order) => order.status === status);
   }
 
@@ -66,7 +67,7 @@ export class DashboardComponent {
     return colorObjects;
   }
 
-  receiveCurrentItem(taskData: any) {
+  receiveCurrentItem(taskData: Orders) {
     this.currentItem = taskData;
   }
 
@@ -75,7 +76,7 @@ export class DashboardComponent {
     event.preventDefault();
   }
 
-  drop(event: CdkDragDrop<any[]>, status: string) {
+  drop(event: CdkDragDrop<Orders[]>, status: string) {
     const record = this.orders.find((m) => m.id == this.currentItem?.id);
     console.log('currentItem>>',this.currentItem);
 

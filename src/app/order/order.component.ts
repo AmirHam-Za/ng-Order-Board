@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Orders } from '../interfaces/order.interface';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -6,13 +7,14 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 
 export class OrderComponent {
-    @Input() orders: any[] = [];
 
-  @Output() emitCurrentItem: EventEmitter<any> = new EventEmitter<any>();
+  @Input() orders: Orders[] = [];
 
-  currentItem: any | undefined;
+  @Output() emitCurrentItem: EventEmitter<Orders> = new EventEmitter<Orders>();
 
-  onDragStart(item: any) {
+  currentItem: Orders | undefined;
+
+  onDragStart(item: Orders) {
     this.currentItem = item;
     this.emitCurrentItem.emit(this.currentItem);
   }
