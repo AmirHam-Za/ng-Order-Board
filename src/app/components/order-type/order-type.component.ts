@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Orders } from '../interfaces/order.interface';
+import { Orders } from '../../interfaces/order.interface';
 @Component({
   selector: 'app-order-type',
   templateUrl: './order-type.component.html',

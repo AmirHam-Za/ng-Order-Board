@@ -1,8 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { OrderService } from '../services/order/order.service';
+import { OrderService } from '../../services/order/order.service';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Orders } from '../interfaces/order.interface';
+import { Orders } from '../../interfaces/order.interface';
+import { ORDER_TITLE_OBJECTS } from '../../constant/order-type';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,6 +21,8 @@ export class DashboardComponent {
   delivered: Orders[] = [];
 
   currentItem: Orders | undefined;
+
+  orderTitleObjects = ORDER_TITLE_OBJECTS;
 
   constructor(private _orderService: OrderService) { }
 
@@ -48,13 +51,8 @@ export class DashboardComponent {
   }
 
   orderBoxTitleObjects() {
-    const titleobjects  = [
-      { id: 1, title: 'NEW ORDERS' },
-      { id: 2, title: 'PREPARING' },
-      { id: 3, title: 'PREPARED' },
-      { id: 4, title: 'DELIVERED' },
-    ];
-    return titleobjects;
+
+    return this.orderTitleObjects;
   }
 
   orderBgcolorObjects() {

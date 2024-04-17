@@ -1,3 +1,4 @@
+import { OrderItem } from "./order-item.interface";
 export interface Orders {
   id: string;
   guid: string;
@@ -7,7 +8,4 @@ export interface Orders {
   created_at: string;
   updated_at: string;
 }
-export interface OrderItem {
-  item: string;
-  quantity: string;
-}
+
