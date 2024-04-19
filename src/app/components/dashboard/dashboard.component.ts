@@ -11,6 +11,7 @@ import { OrderService } from '@services/order/order.service';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+
   orders: Orders[] = [];
   title: any;
   bgColor: any;
@@ -74,7 +75,6 @@ export class DashboardComponent {
 
   drop(event: CdkDragDrop<Orders[]>, status: string) {
     const record = this.orders.find((m) => m.id == this.currentItem?.id);
-    console.log('currentItem>>',this.currentItem);
 
     if (record) {
       record.status = status;
@@ -101,4 +101,11 @@ export class DashboardComponent {
       console.error('Order not found');
     }
   }
+
+
+  isPopupOpen: boolean = false
+    openTaskAddPopup() {
+      this.isPopupOpen = true;
+        console.log('Add Order Clicked');
+    }
 }

@@ -1,0 +1,64 @@
+<div *ngIf="isPopupOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-50">
+  <div class="bg-green-100 p-3 rounded-lg ">
+
+    <div class="flex justify-end text-gray-600">
+      <button (click)="closePopup()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div *ngIf="successMessage">
+      {{ successMessage }}
+    </div>
+
+    <div class="flex justify-center">
+      <div class="modal p-2 rounded">
+        <form (submit)="addOrder()">
+          <div *ngFor="let item of newOrder.orderItems; let i = index">
+
+            <div class="flex gap-2">
+              <div class="">
+                <label for="item{{i}}">Item:</label><br>
+                <select id="item{{i}}" [(ngModel)]="newOrder.orderItems[i].item" name="item{{i}}">
+                  <option value="Chicken masala">Chicken masala</option>
+                  <option value="French fries">French fries</option>
+                  <option value="Coca-Cola">CokaCola</option>
+                  <option value="Cheeseburger">Cheeseburger</option>
+                  <option value="Margherita Pizza">Margherita Pizza</option>
+                  <option value="Sushi Combo">Sushi Combo</option>
+                  <option value="Fish and Chips">Fish and Chips</option>
+                  <option value="Chicken Tikka">Chicken Tikka</option>
+                  <option value="Pad Thai">Pad Thai</option>
+                  <option value="Veggie Wrap">Veggie Wrap</option>
+                </select>
+              </div>
+
+              <div class="">
+                <label for="size{{i}}">Quantity:</label><br>
+                <select id="size{{i}}" [(ngModel)]="newOrder.orderItems[i].quantity" name="size{{i}}">
+                  <option value="1">1pc</option>
+                  <option value="2">2pcs</option>
+                  <option value="3">3pcs</option>
+                  <option value="4">4pcs</option>
+                  <option value="small">Small</option>
+                  <option value="meduim">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="100ml">100ml</option>
+                  <option value="200ml">200ml</option>
+                  <option value="250ml">250ml</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="px-4 py-1 m-2 text-gray-600 border border-gray-600">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

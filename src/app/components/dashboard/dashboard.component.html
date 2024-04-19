@@ -1,9 +1,27 @@
 <div class="bg-teal-100">
 
   <header class="h-16 bg-teal-400">
-    <div class="container mx-auto">
+    <div class="container mx-auto flex justify-between items-center h-full">
       <h1 class="text-3xl px-4 p-2  text-gray-100">Order Board</h1>
+
+
+      <div class="flex items-center">
+        <button (click)="openTaskAddPopup()" class="font-semibold flex rounded p-1 h-[35px] text-gray-600">
+
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-[20px] h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+
+          Add Order
+        </button>
+      </div>
     </div>
+
+    <app-add-order-modal [(isPopupOpen)]="isPopupOpen"></app-add-order-modal>
   </header>
 
   <div class="container mx-auto  min-h-svh p-4 ">

@@ -8,6 +8,8 @@ import { OrderTypeComponent } from './components/order-type/order-type.component
 import { OrderComponent } from './components/order/order.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AddOrderModalComponent } from './components/add-order-modal/add-order-modal.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 
@@ -15,14 +17,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     AppComponent,
     DashboardComponent,
     OrderTypeComponent,
-    OrderComponent
+    OrderComponent,
+    AddOrderModalComponent
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
 
   providers: [],

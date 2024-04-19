@@ -16,8 +16,10 @@ export class OrderTypeComponent {
 
   currentItem: Orders | undefined
 
+
   receiveCurrentItem(event: Orders) {
     this.currentItem = event
     this.emitCurrentItem.emit(this.currentItem);
   }
+
 }
