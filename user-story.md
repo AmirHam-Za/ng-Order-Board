@@ -3,3 +3,5 @@
 2. Users can manage food orders using these four boxes.
 
 3. Users are allowed to transfer orders from one box to another by drag and drop.
+
+4 . Users can add  new Order(s) in the first order box(MVP).
