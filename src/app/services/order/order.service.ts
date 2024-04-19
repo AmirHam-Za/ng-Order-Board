@@ -20,6 +20,7 @@ export class OrderService {
     return this._http.put<any>(`${this.API_ENDPOINT}/orders/${task.id}`, task);
   }
 
+    // TODO: need refactor for optimization 
   private generateOrderUniqueId(): string {
     return Math.random().toString(36).substr(2, 9);
   }

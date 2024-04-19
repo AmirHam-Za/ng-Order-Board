@@ -23,6 +23,8 @@
               <div class="">
                 <label for="item{{i}}">Item:</label><br>
                 <select id="item{{i}}" [(ngModel)]="newOrder.orderItems[i].item" name="item{{i}}">
+
+                  <!-- TODO: need to show data with price after adding a new order in the database -->
                   <option value="Chicken masala">Chicken masala</option>
                   <option value="French fries">French fries</option>
                   <option value="Coca-Cola">CokaCola</option>

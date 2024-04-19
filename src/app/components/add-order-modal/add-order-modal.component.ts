@@ -26,7 +26,8 @@ export class AddOrderModalComponent {
 
   currentDateTime: string = new Date().toISOString();
   successMessage: string = '';
-
+  
+// TODO: need to implement functionality to show price with order
   newOrder: Orders = {
     id: '',
     guid: '',
