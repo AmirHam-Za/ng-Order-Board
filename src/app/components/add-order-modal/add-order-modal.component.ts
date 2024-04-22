@@ -1,7 +1,10 @@
-import { HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {  ItemObject } from '@interfaces/item-object.interface';
 import { Orders } from '@interfaces/order.interface';
+import { itemObject } from '@models/item-data';
 import { OrderService } from '@services/order/order.service';
+
 
 @Component({
   selector: 'app-add-order-modal',
@@ -26,52 +29,57 @@ export class AddOrderModalComponent {
 
   currentDateTime: string = new Date().toISOString();
   successMessage: string = '';
-  
-// TODO: need to implement functionality to show price with order
+  selectedItem: string = '';
+  selectedType: string = '';
+  itemObject: ItemObject = itemObject;
+
   newOrder: Orders = {
     id: '',
     guid: '',
     order_no: 0,
     orderItems: [
-      { item: '', quantity: '' }
+      { itemType: '', typeTitle: '', typePrice: '' }
     ],
     status: '1',
     created_at: this.currentDateTime,
     updated_at: this.currentDateTime
   };
 
-  constructor( private _orderSevice: OrderService ) { }
+  constructor( private _orderSevice: OrderService, private _http: HttpClient ) { }
 
   closePopup() {
     this.isPopupOpen = false;
   }
 
   addOrder() {
+    if (this.selectedItem && this.selectedType) {
+      const price = this.itemObject.typePrice[this.selectedItem][this.selectedType];
+      if (price != null) {
+        const newOrderItem = {
+          itemType: this.selectedItem,
+          typeTitle: this.selectedType,
+          typePrice: price.toString()
+        };
 
-    const newOrderName = this.newOrder.id;
+        this.newOrder.orderItems = [newOrderItem];
+        this.selectedItem = '';
+        this.selectedType = '';
 
-    if (newOrderName != null) {
-
-      this._orderSevice.addOrderAsync(this.newOrder).subscribe({
-
-        next: () => {
-          this.successMessage = 'Order added successfully!';
-          this.newOrder.orderItems.forEach(orderItem => {
-            orderItem.item = '';
-            orderItem.quantity = '';
-          });
-        },
-
-        error: (error: HttpErrorResponse) => {
-          if (error.status === 404) {
-            console.log(`Add Order Error occurred: ${error.statusText}-${error.status}`);
+        this._orderSevice.addOrderAsync(this.newOrder).subscribe({
+          next: () => {
+            this.successMessage = 'Order added successfully!';
+          },
+          error: (error: HttpErrorResponse) => {
+            if (error.status === 404) {
+              console.log(`Add Order Error occurred: ${error.statusText}-${error.status}`);
+            }
           }
-        }
-
-      });
-
+        });
+      } else {
+        console.error('Price not found for the selected item and size.');
+      }
     } else {
-      console.error('Order not found');
+      console.error('Please select an item and size.');
     }
   }
 

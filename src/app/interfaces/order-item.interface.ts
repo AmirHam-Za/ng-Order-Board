@@ -1,4 +1,5 @@
 export interface OrderItem {
-  item: string;
-  quantity: string;
+  itemType: string;
+  typeTitle: string;
+  typePrice: string;
 }

@@ -6,16 +6,19 @@
       "order_no": "110",
       "orderItems": [
         {
-          "item": "Chicken masala",
-          "quantity": "2"
+          "itemType": "Chicken masala",
+          "typeTitle": "2",
+          "typePrice": "2"
         },
         {
-          "item": "French Fries",
-          "quantity": "Large"
+          "itemType": "French Fries",
+          "typeTitle": "Large",
+          "typePrice": "Large"
         },
         {
-          "item": "CoKaCola",
-          "quantity": "250 ML"
+          "itemType": "CoKaCola",
+          "typeTitle": "250 ML",
+          "typePrice": "250 ML"
         }
       ],
       "status": "1",
@@ -28,16 +31,19 @@
       "order_no": "111",
       "orderItems": [
         {
-          "item": "Chicken masala",
-          "quantity": "2"
+          "itemType": "Chicken masala",
+          "typeTitle": "2",
+          "typePrice": "2"
         },
         {
-          "item": "French Fries",
-          "quantity": "Large"
+          "itemType": "French Fries",
+          "typeTitle": "Large",
+          "typePrice": "Large"
         },
         {
-          "item": "CoKaCola",
-          "quantity": "250 ML"
+          "itemType": "CoKaCola",
+          "typeTitle": "250 ML",
+          "typePrice": "250 ML"
         }
       ],
       "status": "2",
@@ -50,16 +56,19 @@
       "order_no": "112",
       "orderItems": [
         {
-          "item": "Chicken masala",
-          "quantity": "2"
+          "itemType": "Chicken masala",
+          "typeTitle": "2",
+          "typePrice": "2"
         },
         {
-          "item": "French Fries",
-          "quantity": "Large"
+          "itemType": "French Fries",
+          "typeTitle": "Large",
+          "typePrice": "Large"
         },
         {
-          "item": "CoKaCola",
-          "quantity": "250 ML"
+          "itemType": "CoKaCola",
+          "typeTitle": "250 ML",
+          "typePrice": "250 ML"
         }
       ],
       "status": "3",
@@ -72,21 +81,55 @@
       "order_no": "113",
       "orderItems": [
         {
-          "item": "Chicken masala",
-          "quantity": "2"
+          "itemType": "Chicken masala",
+          "typeTitle": "2",
+          "typePrice": "2"
         },
         {
-          "item": "French Fries",
-          "quantity": "Large"
+          "itemType": "French Fries",
+          "typeTitle": "Large",
+          "typePrice": "Large"
         },
         {
-          "item": "CoKaCola",
-          "quantity": "250 ML"
+          "itemType": "CoKaCola",
+          "typeTitle": "250 ML",
+          "typePrice": "250 ML"
         }
       ],
       "status": "1",
       "created_at": "2024-04-07T08:07:00Z",
       "updated_at": "2024-04-07T08:08:00Z"
+    },
+    {
+      "id": "i3gpue762",
+      "guid": "cfqg",
+      "order_no": 251,
+      "orderItems": [
+        {
+          "itemType": "Coca-Cola",
+          "typeTitle": "200ml",
+          "typePrice": "200ml",
+          "price": "2.49"
+        }
+      ],
+      "status": "1",
+      "created_at": "2024-04-22T18:01:01.456Z",
+      "updated_at": "2024-04-22T18:01:01.456Z"
+    },
+    {
+      "id": "2ikt9o4n9",
+      "guid": "wzto",
+      "order_no": 206,
+      "orderItems": [
+        {
+          "itemType": "Chicken Masala",
+          "typeTitle": "Large",
+          "typePrice": "10.99"
+        }
+      ],
+      "status": "1",
+      "created_at": "2024-04-22T18:12:15.351Z",
+      "updated_at": "2024-04-22T18:12:15.351Z"
     }
   ]
 }

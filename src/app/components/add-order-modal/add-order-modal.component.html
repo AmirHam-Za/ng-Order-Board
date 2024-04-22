@@ -16,49 +16,30 @@
 
     <div class="flex justify-center">
       <div class="modal p-2 rounded">
-        <form (submit)="addOrder()">
-          <div *ngFor="let item of newOrder.orderItems; let i = index">
 
-            <div class="flex gap-2">
-              <div class="">
-                <label for="item{{i}}">Item:</label><br>
-                <select id="item{{i}}" [(ngModel)]="newOrder.orderItems[i].item" name="item{{i}}">
+        <form (ngSubmit)="addOrder()">
+          <div>
+            <label for="itemSelect">Select Item:</label>
+            <select id="itemSelect" [(ngModel)]="selectedItem" name="selectedItem">
+              <option *ngFor="let item of itemObject.itemtype" [value]="item">{{ item }}</option>
+            </select>
+          </div>
 
-                  <!-- TODO: need to show data with price after adding a new order in the database -->
-                  <option value="Chicken masala">Chicken masala</option>
-                  <option value="French fries">French fries</option>
-                  <option value="Coca-Cola">CokaCola</option>
-                  <option value="Cheeseburger">Cheeseburger</option>
-                  <option value="Margherita Pizza">Margherita Pizza</option>
-                  <option value="Sushi Combo">Sushi Combo</option>
-                  <option value="Fish and Chips">Fish and Chips</option>
-                  <option value="Chicken Tikka">Chicken Tikka</option>
-                  <option value="Pad Thai">Pad Thai</option>
-                  <option value="Veggie Wrap">Veggie Wrap</option>
-                </select>
-              </div>
+          <div *ngIf="selectedItem">
+            <label for="sizeSelect">Select Item Type: </label>
+            <select id="sizeSelect" [(ngModel)]="selectedType" name="selectedType">
+              <option *ngFor="let size of itemObject.typeTitle[selectedItem]" [value]="size">{{ size }}</option>
+            </select>
+          </div>
 
-              <div class="">
-                <label for="size{{i}}">Quantity:</label><br>
-                <select id="size{{i}}" [(ngModel)]="newOrder.orderItems[i].quantity" name="size{{i}}">
-                  <option value="1">1pc</option>
-                  <option value="2">2pcs</option>
-                  <option value="3">3pcs</option>
-                  <option value="4">4pcs</option>
-                  <option value="small">Small</option>
-                  <option value="meduim">Medium</option>
-                  <option value="large">Large</option>
-                  <option value="100ml">100ml</option>
-                  <option value="200ml">200ml</option>
-                  <option value="250ml">250ml</option>
-                </select>
-              </div>
-            </div>
+          <div *ngIf="selectedItem && selectedType">
+            <p>Price: {{ itemObject.typePrice[selectedItem][selectedType] | currency }}</p>
           </div>
 
           <button type="submit" class="px-4 py-1 m-2 text-gray-600 border border-gray-600">Submit</button>
-
         </form>
+
+
       </div>
     </div>
 
