@@ -60,6 +60,13 @@
     1. Place the items object in the json server.
     2. The endpoint of the items object should be "items". 
     3. Items object have three properties- itemType, typeTitle and typePrice.
-    4. Each property should have it’s  relavant data,
+    4. Each property should have it’s relavant data,
 
 12. Users can add an order on the basis of the items data.
+    1. Call "title" from json-server api in the add-order-modal component to show title in the select option.
+    2. Check if "Items" are caled properly in the console.
+    3. Show all  itemType property   of "items" object from  json server in the add order modal when  user needs to select it to create a new order.
+    4. After selecting a certain title from the api,  then the related types and then the related price should be shown by another api calling based on the uuid of the title .
+    5. Users can add multiple items in an order and can see the total price.
+    6. After adding certain items user can save it as an order amd the order will be saved in the json server.
+    7. Finally the order will be shown in the certain order box
