@@ -38,31 +38,28 @@
 6. ~~Refactor and structure.~~
 
 7. ~~create a Add Order button.~~
-
     1. ~~Create "Add Order" button on the right of the header.~~
-    
-    2. ~~Add SVG icon on the left of the button text.~~
+        2. ~~Add SVG icon on the left of the button text.~~
 
 8. ~~When clicking the Add Order button a popup should open.~~
     1. ~~Design the UI of the popup including input field(s) and submit button in a different project.~~
-
     2. ~~Add the popup in the specific component of our project.~~
-
     3. ~~Implement click event functionality in the "Add Order" button with the popup opening. ~~
-
     4. ~~Check if the pop up works accordingly the button is clicked.~~
 
-9. ~~After adding data, if Click the submit button, Order should be added in trhe server.~~
-
+9. ~~After adding data, if Click the submit button, Order should be added in the server.~~
     1. ~~Impement Data binding option in the input field of the popup.~~
-
     2. ~~Create the api calling function to add a new Order.~~
-
     3. ~~Add a click event in the submit button to execute api calling function.~~
-
     4. ~~Check in the console if the api calling function works when the submit button is clicked.~~
-    
     5. ~~Show the newly added Order in the first Order box(New Order).~~  
 
-
 10. Refactor and restructure
+
+11. Items data should be placed in the server.
+    1. Place the items object in the json server.
+    2. The endpoint of the items object should be "items". 
+    3. Items object have three properties- itemType, typeTitle and typePrice.
+    4. Each property should have it’s  relavant data,
+
+12. Users can add an order on the basis of the items data.
