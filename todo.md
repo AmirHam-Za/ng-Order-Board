@@ -57,16 +57,22 @@
 10. Refactor and restructure
 
 11. Items data should be placed in the server.
-    1. Place the items object in the json server.
-    2. The endpoint of the items object should be "items". 
-    3. Items object have three properties- itemType, typeTitle and typePrice.
-    4. Each property should have it’s relavant data,
+    1. Create specific data object with specific format with "items" end point.
+    2. Items object have three properties- itemType, typeTitle and typePrice.
+    3. Each property should have it’s relavant data. 
+    4. Approve the data.
+    5. Place the data in the json server.
+    6. run the app and check the data in the browser.
 
 12. Users can add an order on the basis of the items data.
-    1. Call "title" from json-server api in the add-order-modal component to show title in the select option.
-    2. Check if "Items" are caled properly in the console.
-    3. Show all  itemType property   of "items" object from  json server in the add order modal when  user needs to select it to create a new order.
-    4. After selecting a certain title from the api,  then the related types and then the related price should be shown by another api calling based on the uuid of the title .
-    5. Users can add multiple items in an order and can see the total price.
-    6. After adding certain items user can save it as an order amd the order will be saved in the json server.
-    7. Finally the order will be shown in the certain order box
+    1. Create an "Add Order" buttons to create an order
+    2. By clicking it, a modal will open with certains fields and buttons 
+    3. An api called for First select option to select item title from "items" in json server.
+    4. Another api called for type select and peice input option.
+    5. Need "Add Item" button to add item(s) in the modal.
+    6. Item shows with title, type, price in the modal.
+    7. Total price should be shown below the item list in the modal.
+    8. After selecting a certain title from the api, then the related types and then the related price should be shown by another api calling based on the uuid of the title .
+    9. Users can add multiple items in an order and can see the total price.
+    10. After adding certain items user can save it as an in the json server.
+    11. Finally the order will be shown in the first order box.
