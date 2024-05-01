@@ -1,15 +1,8 @@
-export interface ItemObject {
-  itemtype: string[];
 
-  typeTitle: {
-    [key: string]: string[];
-  };
-
-  typePrice: {
-    [key: string]: {
-      [key: string]: number;
-    };
-  };
+export interface Items {
+  title: string;
+  types: {
+    type: string;
+    price: number;
+  }[];
 }
-
-

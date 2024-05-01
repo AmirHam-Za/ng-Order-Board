@@ -17,28 +17,50 @@
     <div class="flex justify-center">
       <div class="modal p-2 rounded">
 
-        <form (ngSubmit)="addOrder()">
-          <div>
-            <label for="itemSelect">Select Item:</label>
-            <select id="itemSelect" [(ngModel)]="selectedItem" name="selectedItem">
-              <option *ngFor="let item of itemObject.itemtype" [value]="item">{{ item }}</option>
+        <div>
+          <div class="flex">
+            <div class="mr-2">
+              <label for="">Item Title</label><br>
+              <select [(ngModel)]="selectedTitle" (change)="updateAvailableOptions()" placeholder="Select Item">
+                <option value="">Select Item</option>
+                <option *ngFor="let item of itemObject" [value]="item.title">{{ item.title }}</option>
+              </select>
+            </div>
+
+            <div class="mr-2">
+            <label for="">Item Type</label><br>
+            <select [(ngModel)]="selectedType" (change)="updateSelectedPrice()" placeholder="Select Type">
+              <option value="">Select Type</option>
+              <option *ngFor="let type of availableTypes" [value]="type">{{ type }}</option>
             </select>
+            </div>
+
+            <div class="mr-2">
+              <label for="">Item Price</label><br>
+              <input type="number" [(ngModel)]="selectedPrice" placeholder="Price" readonly>
+            </div>
+
+            <div class="flex items-end">
+              <button class="" (click)="addItem()">Add Item</button>
+            </div>
           </div>
 
-          <div *ngIf="selectedItem">
-            <label for="sizeSelect">Select Item Type: </label>
-            <select id="sizeSelect" [(ngModel)]="selectedType" name="selectedType">
-              <option *ngFor="let size of itemObject.typeTitle[selectedItem]" [value]="size">{{ size }}</option>
-            </select>
-          </div>
 
-          <div *ngIf="selectedItem && selectedType">
-            <p>Price: {{ itemObject.typePrice[selectedItem][selectedType] | currency }}</p>
-          </div>
 
-          <button type="submit" class="px-4 py-1 m-2 text-gray-600 border border-gray-600">Submit</button>
-        </form>
 
+        </div>
+
+        <h2>Selected Items</h2>
+
+        <ul>
+          <li *ngFor="let item of selectedItems">
+            {{ item.title }} - {{ item.type }} - {{ item.price }}
+          </li>
+        </ul>
+
+        <p>Total Price: {{ getTotalPrice() }}</p>
+
+        <button class="bg-gray-500 hover:bg-gray-700 text-white p-1 rounded mt-2" (click)="submit()">Add to Order</button>
 
       </div>
     </div>

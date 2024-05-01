@@ -4,6 +4,7 @@ export interface Orders {
   guid: string;
   order_no: number;
   orderItems: OrderItem[];
+  totalPrice: number;
   status: string;
   created_at: string;
   updated_at: string;

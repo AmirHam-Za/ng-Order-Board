@@ -1,135 +1,359 @@
 {
   "orders": [
     {
-      "id": "1",
-      "guid": "e7cf6f7b-3a0b-4b8c-b91f-9b7b9d8507e7",
-      "order_no": "110",
+      "id": "sr92kto0c",
+      "guid": "d4v6",
+      "order_no": 136,
       "orderItems": [
         {
-          "itemType": "Chicken masala",
-          "typeTitle": "2",
-          "typePrice": "2"
+          "itemType": "Chicken Wings",
+          "typeTitle": "6 pc",
+          "typePrice": 8
         },
         {
-          "itemType": "French Fries",
-          "typeTitle": "Large",
-          "typePrice": "Large"
+          "itemType": "Sushi Platter",
+          "typeTitle": "24 Pcs",
+          "typePrice": 35
         },
         {
-          "itemType": "CoKaCola",
-          "typeTitle": "250 ML",
-          "typePrice": "250 ML"
+          "itemType": "Veggie Wrap",
+          "typeTitle": "Deluxe (with Avocado)",
+          "typePrice": 10
         }
       ],
       "status": "1",
-      "created_at": "2024-04-08T12:01:00Z",
-      "updated_at": "2024-04-08T12:02:00Z"
+      "totalPrice": 53,
+      "created_at": "2024-04-26T12:02:57.452Z",
+      "updated_at": "2024-04-26T12:02:57.452Z"
     },
     {
-      "id": "2",
-      "guid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205186",
-      "order_no": "111",
+      "id": "m6a4xu7kk",
+      "guid": "2vi9",
+      "order_no": 124,
       "orderItems": [
         {
-          "itemType": "Chicken masala",
-          "typeTitle": "2",
-          "typePrice": "2"
-        },
-        {
-          "itemType": "French Fries",
+          "itemType": "Spaghetti Bolognese",
           "typeTitle": "Large",
-          "typePrice": "Large"
+          "typePrice": 18
         },
         {
-          "itemType": "CoKaCola",
-          "typeTitle": "250 ML",
-          "typePrice": "250 ML"
-        }
-      ],
-      "status": "2",
-      "created_at": "2024-04-07T08:03:00Z",
-      "updated_at": "2024-04-07T08:04:00Z"
-    },
-    {
-      "id": "3",
-      "guid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205187",
-      "order_no": "112",
-      "orderItems": [
-        {
-          "itemType": "Chicken masala",
-          "typeTitle": "2",
-          "typePrice": "2"
+          "itemType": "Veggie Wrap",
+          "typeTitle": "Regular",
+          "typePrice": 7
         },
         {
-          "itemType": "French Fries",
-          "typeTitle": "Large",
-          "typePrice": "Large"
+          "itemType": "Grilled Salmon",
+          "typeTitle": "Single Fillet",
+          "typePrice": 15
         },
         {
-          "itemType": "CoKaCola",
-          "typeTitle": "250 ML",
-          "typePrice": "250 ML"
+          "itemType": "Grilled Salmon",
+          "typeTitle": "Single Fillet",
+          "typePrice": 15
         }
       ],
       "status": "3",
-      "created_at": "2024-04-07T08:05:00Z",
-      "updated_at": "2024-04-07T08:06:00Z"
+      "totalPrice": 55,
+      "created_at": "2024-04-26T15:17:59.423Z",
+      "updated_at": "2024-04-26T15:17:59.423Z"
     },
     {
-      "id": "4",
-      "guid": "6b3e3a79-f5c2-4d27-b426-2c7a8b205188",
-      "order_no": "113",
+      "id": "193nic8nb",
+      "guid": "qhlv",
+      "order_no": 160,
       "orderItems": [
         {
-          "itemType": "Chicken masala",
-          "typeTitle": "2",
-          "typePrice": "2"
+          "itemType": "Beef Tacos",
+          "typeTitle": "2 Pcs",
+          "typePrice": 7
         },
         {
-          "itemType": "French Fries",
-          "typeTitle": "Large",
-          "typePrice": "Large"
+          "itemType": "Spaghetti Bolognese",
+          "typeTitle": "Regular",
+          "typePrice": 12
+        }
+      ],
+      "status": "2",
+      "totalPrice": 19,
+      "created_at": "2024-04-26T15:18:19.535Z",
+      "updated_at": "2024-04-26T15:18:19.535Z"
+    },
+    {
+      "id": "51x6jn6jg",
+      "guid": "36t1",
+      "order_no": 116,
+      "orderItems": [
+        {
+          "itemType": "Grilled Salmon",
+          "typeTitle": "Double Fillet",
+          "typePrice": 25
         },
         {
-          "itemType": "CoKaCola",
-          "typeTitle": "250 ML",
-          "typePrice": "250 ML"
-        }
-      ],
-      "status": "1",
-      "created_at": "2024-04-07T08:07:00Z",
-      "updated_at": "2024-04-07T08:08:00Z"
-    },
-    {
-      "id": "i3gpue762",
-      "guid": "cfqg",
-      "order_no": 251,
-      "orderItems": [
-        {
-          "itemType": "Coca-Cola",
-          "typeTitle": "200ml",
-          "typePrice": "200ml",
-          "price": "2.49"
-        }
-      ],
-      "status": "1",
-      "created_at": "2024-04-22T18:01:01.456Z",
-      "updated_at": "2024-04-22T18:01:01.456Z"
-    },
-    {
-      "id": "2ikt9o4n9",
-      "guid": "wzto",
-      "order_no": 206,
-      "orderItems": [
-        {
-          "itemType": "Chicken Masala",
+          "itemType": "Spaghetti Bolognese",
           "typeTitle": "Large",
-          "typePrice": "10.99"
+          "typePrice": 18
+        },
+        {
+          "itemType": "Chicken Wings",
+          "typeTitle": "12 pc",
+          "typePrice": 15
+        }
+      ],
+      "status": "2",
+      "totalPrice": 58,
+      "created_at": "2024-04-26T15:21:06.199Z",
+      "updated_at": "2024-04-26T15:21:06.199Z"
+    },
+    {
+      "id": "yt8qbe58b",
+      "guid": "yaas",
+      "order_no": 300,
+      "orderItems": [
+        {
+          "itemType": "Chicken Wings",
+          "typeTitle": "6 Pc",
+          "typePrice": 8
+        },
+        {
+          "itemType": "Chicken Wings",
+          "typeTitle": "12 Pc",
+          "typePrice": 15
+        },
+        {
+          "itemType": "Chicken Wings",
+          "typeTitle": "6 Pc",
+          "typePrice": 8
+        },
+        {
+          "itemType": "Veggie Wrap",
+          "typeTitle": "Deluxe",
+          "typePrice": 10
         }
       ],
       "status": "1",
-      "created_at": "2024-04-22T18:12:15.351Z",
-      "updated_at": "2024-04-22T18:12:15.351Z"
+      "totalPrice": 41,
+      "created_at": "2024-04-26T19:47:57.403Z",
+      "updated_at": "2024-04-26T19:47:57.403Z"
+    },
+    {
+      "id": "1awsv0c6j",
+      "guid": "i3g5",
+      "order_no": 103,
+      "orderItems": [
+        {
+          "itemType": "Beef Tacos",
+          "typeTitle": "4 Tacos",
+          "typePrice": 12
+        },
+        {
+          "itemType": "Sushi Platter",
+          "typeTitle": "24 Pcs",
+          "typePrice": 35
+        },
+        {
+          "itemType": "Sushi Platter",
+          "typeTitle": "24 Pcs",
+          "typePrice": 35
+        }
+      ],
+      "status": "1",
+      "totalPrice": 82,
+      "created_at": "2024-04-26T20:13:10.151Z",
+      "updated_at": "2024-04-26T20:13:10.151Z"
+    },
+    {
+      "id": "0cw7l903d",
+      "guid": "kwmx",
+      "order_no": 149,
+      "orderItems": [
+        {
+          "itemType": "Spaghetti Bolognese",
+          "typeTitle": "Large",
+          "typePrice": 18
+        },
+        {
+          "itemType": "Chicken Wings",
+          "typeTitle": "6 Pc",
+          "typePrice": 8
+        },
+        {
+          "itemType": "Sushi Platter",
+          "typeTitle": "12 Pcs",
+          "typePrice": 20
+        },
+        {
+          "itemType": "Grilled Salmon",
+          "typeTitle": "Double Fillet",
+          "typePrice": 25
+        }
+      ],
+      "status": "2",
+      "totalPrice": 71,
+      "created_at": "2024-04-26T23:03:14.304Z",
+      "updated_at": "2024-04-26T23:03:14.304Z"
+    },
+    {
+      "id": "0z5m3haas",
+      "guid": "u6lm",
+      "order_no": 160,
+      "orderItems": [
+        {
+          "itemType": "Chicken Wings",
+          "typeTitle": "6 Pc",
+          "typePrice": 8
+        },
+        {
+          "itemType": "Beef Tacos",
+          "typeTitle": "4 Tacos",
+          "typePrice": 12
+        }
+      ],
+      "status": "1",
+      "totalPrice": 20,
+      "created_at": "2024-05-01T17:09:59.461Z",
+      "updated_at": "2024-05-01T17:09:59.461Z"
+    }
+  ],
+  "items": [
+    {
+      "id": "8d6fb9d8-4c4d-4279-9931-2af3d6153b5b",
+      "title": "Chicken Wings",
+      "types": [
+        {
+          "type": "6 Pc",
+          "price": 8
+        },
+        {
+          "type": "12 Pc",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": "c50bc8d7-d19e-4b9d-bf08-3c39289f0d6d",
+      "title": "Cheeseburger",
+      "types": [
+        {
+          "type": "Single Patty",
+          "price": 6
+        },
+        {
+          "type": "Double Patty",
+          "price": 9
+        }
+      ]
+    },
+    {
+      "id": "1d14d0f7-7f37-47bb-84e0-8e6d94be740c",
+      "title": "Margherita Pizza",
+      "types": [
+        {
+          "type": "Small",
+          "price": 10
+        },
+        {
+          "type": "Large",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": "9a7de5e7-ae6a-4f6b-b3f3-ec1d9a5115db",
+      "title": "Caesar Salad",
+      "types": [
+        {
+          "type": "Regular",
+          "price": 8
+        },
+        {
+          "type": "Family Size",
+          "price": 12
+        }
+      ]
+    },
+    {
+      "id": "f3e78aa9-4f3d-479e-b44c-2e3a5214a7ad",
+      "title": "Beef Tacos",
+      "types": [
+        {
+          "type": "2 Tacos",
+          "price": 7
+        },
+        {
+          "type": "4 Tacos",
+          "price": 12
+        }
+      ]
+    },
+    {
+      "id": "c7764484-63d5-4050-af47-23b1dcf1718c",
+      "title": "Spaghetti Bolognese",
+      "types": [
+        {
+          "type": "Regular",
+          "price": 12
+        },
+        {
+          "type": "Large",
+          "price": 18
+        }
+      ]
+    },
+    {
+      "id": "bc2fde2c-21f2-4c15-b41a-74a3a22a51d4",
+      "title": "Sushi Platter",
+      "types": [
+        {
+          "type": "12 Pcs",
+          "price": 20
+        },
+        {
+          "type": "24 Pcs",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": "a5cdaa28-26f1-40f5-af94-04e345f98ad7",
+      "title": "Veggie Wrap",
+      "types": [
+        {
+          "type": "Regular",
+          "price": 7
+        },
+        {
+          "type": "Deluxe",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": "bd5b9b15-7d6e-4601-a982-2a5e80e4161a",
+      "title": "Grilled Salmon",
+      "types": [
+        {
+          "type": "Single Fillet",
+          "price": 15
+        },
+        {
+          "type": "Double Fillet",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": "715d9276-45d8-4f79-9dc3-cce9d68c6977",
+      "title": "Chocolate Brownie",
+      "types": [
+        {
+          "type": "Regular",
+          "price": 6
+        },
+        {
+          "type": "Family Size",
+          "price": 12
+        }
+      ]
     }
   ]
 }
